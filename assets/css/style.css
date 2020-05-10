@@ -802,15 +802,12 @@ header {
     border-radius: 4px;
     margin-bottom: 20px; }
     .service-accordion_card-header {
+      cursor: pointer;
       height: 140px; }
       .service-accordion_card-header_btn.collapsed i svg {
         -webkit-transform: rotate(-90deg);
             -ms-transform: rotate(-90deg);
                 transform: rotate(-90deg); }
-      .service-accordion_card-header h2 {
-        height: 100%; }
-        .service-accordion_card-header h2:hover i {
-          width: 60px; }
       .service-accordion_card-header_btn {
         position: relative;
         display: -webkit-box;
@@ -836,6 +833,8 @@ header {
         background-image: -webkit-gradient(linear, left top, right top, from(#13d733), to(#0fc906));
         background-image: -o-linear-gradient(left, #13d733 0%, #0fc906 100%);
         background-image: linear-gradient(to right, #13d733 0%, #0fc906 100%); }
+        .service-accordion_card-header_btn:hover i {
+          width: 60px; }
         .service-accordion_card-header_btn i {
           position: absolute;
           top: 0;
@@ -865,7 +864,7 @@ header {
             width: 16px;
             height: 10px;
             fill: #fff; }
-        .service-accordion_card-header_btn .btn-row {
+        .service-accordion_card-header_btn .custom-row {
           -webkit-box-flex: 1;
           -webkit-flex-grow: 1;
               -ms-flex-positive: 1;
@@ -2048,11 +2047,11 @@ header {
       margin-bottom: 10px; }
       .service-accordion_card-header {
         height: 100px; }
-        .service-accordion_card-header h2:hover i {
-          width: 45px; }
         .service-accordion_card-header_btn {
           padding-left: 50px; }
-          .service-accordion_card-header_btn .btn-row {
+          .service-accordion_card-header_btn:hover i {
+            width: 45px; }
+          .service-accordion_card-header_btn .custom-row {
             -webkit-box-align: center;
             -webkit-align-items: center;
                 -ms-flex-align: center;
@@ -2170,8 +2169,8 @@ header {
       .service-accordion_card-header_btn__image {
         display: none; }
       .service-accordion_card-header_btn__title {
-        font-style: 15px;
-        line-height: 16px;
+        font-size: 15px !important;
+        line-height: 14px;
         text-align: center;
         display: block; }
       .service-accordion_card-header_btn__btn .price {
@@ -2243,7 +2242,9 @@ header {
     .tvm-slider_item-image {
       min-width: 80px; }
     .tvm-slider_item .title {
-      margin-bottom: 5px; } }
+      margin-bottom: 5px; }
+  .service-accordion_card-header_btn__title {
+    padding: 0 5px; } }
 
 @media screen and (max-width: 350px) {
   .electro-header_logo__text div:last-child {
