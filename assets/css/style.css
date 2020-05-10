@@ -113,15 +113,20 @@ textarea:focus {
   margin-bottom: 0;
   text-align: center; }
 
-#about, #service {
-  -webkit-transform: translateY(-50px);
-      -ms-transform: translateY(-50px);
-          transform: translateY(-50px); }
+#review {
+  -webkit-transform: translateY(-80px);
+      -ms-transform: translateY(-80px);
+          transform: translateY(-80px); }
 
-#advantage, #review, #stage, #contact {
-  -webkit-transform: translateY(-70px);
-      -ms-transform: translateY(-70px);
-          transform: translateY(-70px); }
+#price {
+  -webkit-transform: translateY(-90px);
+      -ms-transform: translateY(-90px);
+          transform: translateY(-90px); }
+
+#contacts {
+  -webkit-transform: translateY(-90px);
+      -ms-transform: translateY(-90px);
+          transform: translateY(-90px); }
 
 header.sticky {
   position: fixed;
