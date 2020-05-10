@@ -632,7 +632,7 @@ header {
         left: 0;
         right: 0;
         width: 100%;
-        height: 5px;
+        height: 3px;
         background: #00b214;
         -webkit-transform: translateY(10px);
             -ms-transform: translateY(10px);
@@ -935,6 +935,15 @@ header {
         -o-transition: 300ms ease;
         transition: 300ms ease;
         margin-bottom: 4px; }
+        .service-accordion_card-body ul li a {
+          display: block;
+          color: #000;
+          -webkit-transition: 300ms ease;
+          -o-transition: 300ms ease;
+          transition: 300ms ease; }
+          .service-accordion_card-body ul li a:hover {
+            text-decoration: none;
+            color: #333333; }
         .service-accordion_card-body ul li:last-child {
           margin-bottom: 0; }
         .service-accordion_card-body ul li:hover {
@@ -982,6 +991,8 @@ header {
         opacity: 0;
         position: absolute;
         right: 20px;
+        top: -webkit-calc(50% - 32px);
+        top: calc(50% - 32px);
         -webkit-transition: 300ms ease;
         -o-transition: 300ms ease;
         transition: 300ms ease; }
@@ -1022,6 +1033,7 @@ header {
     padding-bottom: 20px;
     color: #fff; }
     .tvm-block_item h3 {
+      width: 100%;
       text-align: center;
       margin: 0;
       text-transform: uppercase;
@@ -1511,8 +1523,14 @@ header {
           text-align: center; }
       .tvm-slider_item-text .description {
         font-family: "Futura PT Book", sans-serif !important;
+        width: 100%;
+        max-width: 300px;
         font-size: 13px;
-        line-height: 15px; }
+        line-height: 15px;
+        max-height: 150px;
+        overflow: hidden; }
+        .tvm-slider_item-text .description:hover {
+          overflow-y: auto; }
   .tvm-slider-btn {
     text-align: center; }
     .tvm-slider-btn .btn-custom a {
@@ -1695,7 +1713,6 @@ header {
       font-size: .85rem;
       color: #8e8e8e; }
   .electro-footer_logo {
-    margin-right: 20px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1790,15 +1807,15 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 20px; }
+    padding: 0 100px; }
     .electro-footer_menu a {
       position: relative;
       display: -webkit-inline-box;
@@ -2318,7 +2335,7 @@ header {
         padding-left: 0; }
         header.sticky .electro-header_collapse__tools-phone {
           position: absolute;
-          top: 10px;
+          top: 3px;
           right: 0;
           display: -webkit-box;
           display: -webkit-flex;
@@ -2380,17 +2397,26 @@ header {
       header.sticky .electro-header_menu a {
         margin-right: 0px;
         padding: 0 10px;
-        min-height: 50px;
+        overflow: visible;
         color: #000;
         -webkit-transition: 300ms ease;
         -o-transition: 300ms ease;
         transition: 300ms ease; }
+        header.sticky .electro-header_menu a::after {
+          -webkit-transform: translateY(5px);
+              -ms-transform: translateY(5px);
+                  transform: translateY(5px);
+          opacity: 0;
+          -webkit-transition: 0ms;
+          -o-transition: 0ms;
+          transition: 0ms; }
         header.sticky .electro-header_menu a:hover {
           color: #00a228; }
           header.sticky .electro-header_menu a:hover::after {
-            -webkit-transform: translateY(0px);
-                -ms-transform: translateY(0px);
-                    transform: translateY(0px); }
+            -webkit-transition: 300ms ease;
+            -o-transition: 300ms ease;
+            transition: 300ms ease;
+            opacity: 1; }
   .tvm-banner {
     color: #fff;
     background-image: url(../images/main.png);
@@ -2650,7 +2676,7 @@ header {
 
 @media screen and (min-width: 1200px) {
   header.sticky .electro-header_collapse__tools-phone {
-    top: 7px; }
+    top: 0px; }
     header.sticky .electro-header_collapse__tools-phone .number {
       font-size: 22px; }
   .tvm-sale_item-line {
