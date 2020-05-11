@@ -45,6 +45,7 @@
     <!-- modal window end -->
      
     <!-- header start --> 
+     <div id="top"></div>
     <header> 
         <div class="electro-header">
             <div class="container-fluid position-relative">
@@ -102,7 +103,7 @@
                                     
                                     <div class="navbar-nav electro-header_menu">
                                         <div class="container mobile-menu">
-                                            <a class="nav-item" href="#price"> прайс  <span class="sr-only">(current)</span></a>
+                                            <a class="nav-item" href="#price"> цены  <span class="sr-only">(current)</span></a>
                                             <a class="nav-item" href="#">Услуги</a>
                                             <a class="nav-item" href="#review">Отзывы</a>  
                                             <a class="nav-item" href="#contacts">Контакты</a>  
@@ -140,7 +141,10 @@
                                 </form>
                                 <span>Нажимая на кнопку "Вызвать мастера", вы соглашаетесь на обработку персональных даных</span>
                             </div>
-                            <h6>Акция действует до 9 Мая!</h6>
+                            <h6 >Акция действует до 
+                                <span class="timer"></span>
+                            Мая!</h6>
+                            
                         </div>
                     </div>
                     <div class="col-5">
@@ -1034,7 +1038,7 @@
                         <div class="tvm-slider_item-image" style="background-image: url(assets/images/review1.jpg);"></div>
                         <div class="tvm-slider_item-text">
                             <div class="title">
-                                Сергей Антипов
+                                <span>Сергей Антипов</span>
                                 <div class="age">
                                     27 лет
                                 </div>
@@ -1168,7 +1172,7 @@
             <div class="container position-relative">
                 <div class="tvm-brands_item">
                     <h3>ремонтирую телевизоры всех брендов</h3>
-                    <h4>Узнайте стоимость устранения у меня</h4> 
+                    <h4>Оставьте заявку, чтобы узнать стоимость ремонта у меня </h4> 
                     <div class="row">
                         <div class="col-12 col-lg-9"> 
                             <form action="#">
@@ -1211,7 +1215,7 @@
         <div class="container">
             <div class="tvm-contact_item">
                 <h3>Остались вопросы? </h3>
-                <h4>Задайте их прямо сейчас и я отвечу через 2 минуты</h4> 
+                <h4>Задайте их прямо сейчас, и я отвечу через 2 минуты</h4> 
                 <form action="#">
                     <div class="tvm-contact_item-form">
                         <div class="tvm-contact_item-form_input">
@@ -1263,7 +1267,7 @@
                         </div> 
                     </a>
                     <div class="electro-footer_menu"> 
-                        <a class="nav-item" href="#price"> прайс  <span class="sr-only">(current)</span></a>
+                        <a class="nav-item" href="#price"> цены  <span class="sr-only">(current)</span></a>
                         <a class="nav-item" href="#">Услуги</a>
                         <a class="nav-item" href="#review">Отзывы</a>  
                         <a class="nav-item" href="#contacts">Контакты</a>  
@@ -1329,6 +1333,8 @@
 
     <script src="assets/js/vendor.min.js"></script>
     <script src="assets/js/script.min.js"></script>
+ 
+ 
 </body>
 </html>
 

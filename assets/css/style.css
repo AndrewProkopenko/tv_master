@@ -1512,13 +1512,9 @@ header {
       .tvm-slider_item-text .description {
         font-family: "Futura PT Book", sans-serif !important;
         width: 100%;
-        max-width: 300px;
+        max-width: 320px;
         font-size: 13px;
-        line-height: 15px;
-        max-height: 150px;
-        overflow: hidden; }
-        .tvm-slider_item-text .description:hover {
-          overflow-y: auto; }
+        line-height: 15px; }
   .tvm-slider-btn {
     text-align: center; }
     .tvm-slider-btn .btn-custom a {
@@ -1956,7 +1952,41 @@ header {
   header.sticky .electro-header_menu a {
     margin-right: 0; }
   .tvm-slider_item {
-    height: 250px; }
+    min-height: auto !important;
+    min-height: 220px;
+    position: relative; }
+    .tvm-slider_item-image {
+      position: absolute;
+      top: 10px;
+      left: -webkit-calc(50% - 30px);
+      left: calc(50% - 30px);
+      height: 60px;
+      min-width: 60px;
+      border-radius: 100%; }
+    .tvm-slider_item-text {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      padding-top: 75px;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 100%; }
+      .tvm-slider_item-text .title {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        margin-bottom: 5px; }
+        .tvm-slider_item-text .title span, .tvm-slider_item-text .title .age {
+          white-space: nowrap; }
+      .tvm-slider_item-text .description {
+        text-align: center;
+        max-width: none !important;
+        padding-bottom: 10px; }
   .electro-footer-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2134,7 +2164,7 @@ header {
       padding-bottom: 15px; }
     .tvm-slider_item {
       margin: 0;
-      height: 200px; }
+      min-height: 255px !important; }
     .tvm-slider .owl-nav {
       display: none; } }
 
@@ -2209,9 +2239,13 @@ header {
       .service-accordion_card-body__price .btn-custom a {
         width: 100%;
         text-align: center; }
-  .tvm-slider_item-text {
-    padding-left: 15px;
-    padding-right: 15px; }
+  .tvm-slider_item {
+    min-height: auto !important; }
+    .tvm-slider_item-text {
+      padding-left: 15px;
+      padding-right: 15px; }
+      .tvm-slider_item-text .description {
+        padding-bottom: 10px; }
   .electro-footer_logo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2243,11 +2277,7 @@ header {
 
 @media screen and (max-width: 400px) {
   .tvm-slider_item {
-    height: 220px; }
-    .tvm-slider_item-image {
-      min-width: 80px; }
-    .tvm-slider_item .title {
-      margin-bottom: 5px; }
+    height: auto; }
   .service-accordion_card-header_btn__title {
     padding: 0 5px; } }
 
