@@ -12,9 +12,9 @@ body {
   z-index: 1;
   display: inline-block;
   border-radius: 5px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#10c700), to(#07d532));
-  background-image: -o-linear-gradient(top, #10c700 0%, #07d532 100%);
-  background-image: linear-gradient(180deg, #10c700 0%, #07d532 100%);
+  background-image: -webkit-gradient(linear, right top, left top, from(#5ba057), to(#45a053));
+  background-image: -o-linear-gradient(right, #5ba057 0%, #45a053 100%);
+  background-image: linear-gradient(to left, #5ba057 0%, #45a053 100%);
   -webkit-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
           box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
   -webkit-transition: 300ms ease;
@@ -95,6 +95,11 @@ textarea:focus {
   line-height: 1.8rem;
   margin-bottom: 0;
   text-align: center; }
+
+#top {
+  -webkit-transform: translateY(-60px);
+      -ms-transform: translateY(-60px);
+          transform: translateY(-60px); }
 
 #review {
   -webkit-transform: translateY(-80px);
@@ -432,10 +437,10 @@ header {
       .electro-header_logo__image svg {
         width: 100%;
         height: 100%;
-        fill: #00c530; }
+        fill: #5ba057; }
     .electro-header_logo__text {
       padding-left: 8px;
-      color: #00c630;
+      color: #5ba057;
       font-size: 1.3rem;
       line-height: 1.4rem;
       font-weight: 600; }
@@ -649,14 +654,14 @@ header {
       margin-bottom: 70px;
       font-size: 26px;
       font-family: "Futura PT Book", sans-serif !important;
-      color: #04d334; }
+      color: #5ba057; }
     .tvm-banner_text h6 {
       margin-top: 15px;
       margin-bottom: 0;
       font-size: 26px;
       font-weight: 700;
       font-family: 'Circe';
-      color: #04d334; }
+      color: #5ba057; }
     .tvm-banner_text-form p {
       font-size: 20px;
       font-weight: 700;
@@ -718,9 +723,9 @@ header {
         z-index: 1;
         min-width: 250px;
         border-radius: 5px;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#10c700), to(#07d532));
-        background-image: -o-linear-gradient(top, #10c700 0%, #07d532 100%);
-        background-image: linear-gradient(180deg, #10c700 0%, #07d532 100%);
+        background-image: -webkit-gradient(linear, right top, left top, from(#5ba057), to(#45a053));
+        background-image: -o-linear-gradient(right, #5ba057 0%, #45a053 100%);
+        background-image: linear-gradient(to left, #5ba057 0%, #45a053 100%);
         -webkit-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
                 box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
         border: none;
@@ -818,9 +823,9 @@ header {
         font-weight: 400;
         border-radius: 3px;
         color: #f8f8f8;
-        background-image: -webkit-gradient(linear, left top, right top, from(#13d733), to(#0fc906));
-        background-image: -o-linear-gradient(left, #13d733 0%, #0fc906 100%);
-        background-image: linear-gradient(to right, #13d733 0%, #0fc906 100%); }
+        background-image: -webkit-gradient(linear, right top, left top, from(#5ba057), to(#45a053));
+        background-image: -o-linear-gradient(right, #5ba057 0%, #45a053 100%);
+        background-image: linear-gradient(to left, #5ba057 0%, #45a053 100%); }
         .service-accordion_card-header_btn:hover i {
           width: 60px; }
         .service-accordion_card-header_btn i {
@@ -842,9 +847,9 @@ header {
           width: 36px;
           height: 100%;
           border-radius: 3px;
-          background-image: -webkit-gradient(linear, left top, left bottom, from(#10c700), to(#07d532));
-          background-image: -o-linear-gradient(top, #10c700 0%, #07d532 100%);
-          background-image: linear-gradient(180deg, #10c700 0%, #07d532 100%);
+          background-image: -webkit-gradient(linear, right top, left top, from(#5ea75a), to(#2b8638));
+          background-image: -o-linear-gradient(right, #5ea75a 0%, #2b8638 100%);
+          background-image: linear-gradient(to left, #5ea75a 0%, #2b8638 100%);
           -webkit-transition: 300ms ease;
           -o-transition: 300ms ease;
           transition: 300ms ease; }
@@ -1037,7 +1042,7 @@ header {
       line-height: 25px;
       font-size: 28px; }
       .tvm-block_item h4 span {
-        color: #0ccd15; }
+        color: #5ba057; }
       .tvm-block_item h4::after {
         display: none;
         content: '';
@@ -1118,9 +1123,9 @@ header {
           width: 100%;
           padding: 18px;
           border-radius: 5px;
-          background-image: -webkit-gradient(linear, left top, left bottom, from(#10c700), to(#07d532));
-          background-image: -o-linear-gradient(top, #10c700 0%, #07d532 100%);
-          background-image: linear-gradient(180deg, #10c700 0%, #07d532 100%);
+          background-image: -webkit-gradient(linear, right top, left top, from(#5ba057), to(#45a053));
+          background-image: -o-linear-gradient(right, #5ba057 0%, #45a053 100%);
+          background-image: linear-gradient(to left, #5ba057 0%, #45a053 100%);
           -webkit-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
                   box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
           border: none;
@@ -1361,9 +1366,9 @@ header {
       height: 52px;
       padding: 18px 30px;
       border-radius: 5px;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#10c700), to(#07d532));
-      background-image: -o-linear-gradient(top, #10c700 0%, #07d532 100%);
-      background-image: linear-gradient(180deg, #10c700 0%, #07d532 100%);
+      background-image: -webkit-gradient(linear, right top, left top, from(#5ba057), to(#45a053));
+      background-image: -o-linear-gradient(right, #5ba057 0%, #45a053 100%);
+      background-image: linear-gradient(to left, #5ba057 0%, #45a053 100%);
       -webkit-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
               box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
       border: none;
@@ -1615,9 +1620,9 @@ header {
         height: 52px;
         padding: 18px 30px;
         border-radius: 5px;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#10c700), to(#07d532));
-        background-image: -o-linear-gradient(top, #10c700 0%, #07d532 100%);
-        background-image: linear-gradient(180deg, #10c700 0%, #07d532 100%);
+        background-image: -webkit-gradient(linear, right top, left top, from(#5ba057), to(#45a053));
+        background-image: -o-linear-gradient(right, #5ba057 0%, #45a053 100%);
+        background-image: linear-gradient(to left, #5ba057 0%, #45a053 100%);
         -webkit-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
                 box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
         border: none;
@@ -1713,10 +1718,10 @@ header {
       .electro-footer_logo__image svg {
         width: 100%;
         height: 100%;
-        fill: #00c530; }
+        fill: #5ba057; }
     .electro-footer_logo__text {
       padding-left: 8px;
-      color: #00c630;
+      color: #5ba057;
       font-size: 1.3rem;
       line-height: 1.4rem;
       font-weight: 600; }
@@ -1937,8 +1942,7 @@ header {
     padding-bottom: 20px; }
   .service-modal-container_header {
     display: none; }
-  .service-modal-container_contact, .service-modal-container_end {
-    margin-top: 30px;
+  .service-modal-container_contact {
     width: 100%;
     padding-left: 10px;
     padding-right: 10px; }
