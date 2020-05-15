@@ -266,9 +266,9 @@ header.sticky {
             width: 100%;
             height: 46px;
             border-radius: 5px;
-            background-image: -webkit-gradient(linear, left top, left bottom, from(#10c700), to(#07d532));
-            background-image: -o-linear-gradient(top, #10c700 0%, #07d532 100%);
-            background-image: linear-gradient(180deg, #10c700 0%, #07d532 100%);
+            background-image: -webkit-gradient(linear, right top, left top, from(#5ba057), to(#45a053));
+            background-image: -o-linear-gradient(right, #5ba057 0%, #45a053 100%);
+            background-image: linear-gradient(to left, #5ba057 0%, #45a053 100%);
             -webkit-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
                     box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
             border: none;
