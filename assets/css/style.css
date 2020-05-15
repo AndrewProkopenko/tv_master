@@ -101,6 +101,11 @@ textarea:focus {
       -ms-transform: translateY(-60px);
           transform: translateY(-60px); }
 
+#sale {
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px); }
+
 #review {
   -webkit-transform: translateY(-80px);
       -ms-transform: translateY(-80px);
@@ -1299,7 +1304,7 @@ header {
       margin-bottom: 10px; }
       .tvm-brands_item-form .selectr-container .selectr-selected {
         text-align: center;
-        height: 52px;
+        height: 54px;
         padding: 18px;
         border: none;
         border-radius: 5px;
@@ -1318,11 +1323,12 @@ header {
           height: 6px;
           opacity: 0.4; }
       .tvm-brands_item-form .selectr-container .selectr-options-container {
-        border-color: #0ac218; }
+        border-color: #0ac218;
+        z-index: 990; }
         .tvm-brands_item-form .selectr-container .selectr-options-container .selectr-options {
-          max-height: auto;
-          overflow: visible;
-          text-align: center; }
+          max-height: 400px !important;
+          text-align: center;
+          overflow: auto; }
           .tvm-brands_item-form .selectr-container .selectr-options-container .selectr-options .selectr-option.active {
             background-color: #0ac117; }
           .tvm-brands_item-form .selectr-container .selectr-options-container .selectr-options .selectr-option.selected {
@@ -2597,7 +2603,10 @@ header {
           .tvm-brands_item-form .selectr-container .selectr-selected {
             text-align: left; }
           .tvm-brands_item-form .selectr-container .selectr-options-container .selectr-options {
-            text-align: left; }
+            text-align: left;
+            overflow: hidden; }
+            .tvm-brands_item-form .selectr-container .selectr-options-container .selectr-options:hover {
+              overflow: auto; }
         .tvm-brands_item-form input {
           width: 30% !important;
           margin-top: 0px;
